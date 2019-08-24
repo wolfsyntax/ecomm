@@ -1,0 +1,147 @@
+<footer class="fixed-bottom">
+    <div class="footer-top ">
+        <div class="row py-2">
+            <div class="col-12 col-md-4">
+                <p class="px-2 ml-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada scelerisque nisl, ac facilisis risus sagittis quis.
+                </p>
+                <ul class="nav flex-column px-2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-capitalize text-dark">
+                            <i class="fa fa-lg fa-map-marker text-danger" ></i>&emsp;&emsp;&nbsp;2nd flr. Traders Square, P. Burgos St. Naga City
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mailto:inquiry@baldpuppies.com" class="nav-link text-dark">
+                            <i class="fa fa-lg fa-envelope text-primary" ></i>&emsp;&emsp;inquiry@baldpuppies.com
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-dark">
+                            <i class="fa fa-lg fa-phone" ></i>&emsp;&emsp;(+633)912-628-0488
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row py-3 py-md-1 ">
+                    <div class="col px-5">
+                        <h6 class="px-2">Company</h6>
+
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Shop More
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Partners
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col px-5">
+                        <h6 class="px-2">Services</h6>
+
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Online-Store
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Bills Payment
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="row px-3">
+                    <div class="col">
+                        <h1>Contact Us</h1>
+                        <form class="container-fluid mr-5">
+                            {% csrf_token %}
+                            <div class="form-row my-2">
+                                <div class="col-12 col-lg-6 py-2 py-md-0">
+                                    <input type="text" name="first_name" class="form-control zround" placeholder="First name" required="" value="">
+                                </div>
+
+                                <div class="col col-lg-6">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last name" required="" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row my-2">
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required="" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row my-2">
+                                <div class="col">
+                                    <textarea placeholder="Comments / Questions" class="form-control" required="required" row="7" aria-labelledby="" spellcheck="false"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row" my-2">
+                                <button type="submit" class="btn btn-sm btn-success col font-weight-bold">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom bg-dark">
+        <div class="container-fluid clearfix">
+            <div class="copyright-text">
+                <p>Powered by <a href="" class="d-inline-block text-white">Baldpuppies Solutions Inc</a></p>
+            </div>
+
+            <ul class="footer-bottom-link">
+                <li>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fa fa-rss"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</footer>
