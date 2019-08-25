@@ -1,3 +1,21 @@
 .simple-link {
     text-decoration: none !important;
 }
+
+.zround {
+  border-radius: 25px !important;
+  padding: 20px !important;
+  font-size: 14px !important;
+}
+
+.custom-zround {
+  border-radius: 25px !important;
+  font-size: 12px !important;
+  height: 42px !important;
+}
+.btn.zround{
+    line-height: 1pt !important;
+}
+*{
+    font-size:12pt !important;
+}

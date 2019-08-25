@@ -17,11 +17,20 @@ Including another URLconf
 from django.urls import path
 from django.conf.urls import url
 from . import views as mview
-from sitemap.views import HomeView, AboutView, ShopView
+from sitemap.views import HomeView#, AboutView, ShopView
+from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^$', HomeView.as_view(), name="home"),
-    url(r'^about$', AboutView.as_view(), name="about"),
-    url(r'^shop$', ShopView.as_view(), name="shop"),
+    #url(r'^x$', mview.index, name="xhome"),
+    #url(r'^about$', AboutView.as_view(), name="about"),
+    #url(r'^shop$', ShopView.as_view(), name="shop"),
+
+    #url(r'^$', TemplateView.as_view(template_name="sitemap/index.html"), name="home"),
+    #url(r'^x$', mview.index, name="xhome"),
+
+    url(r'^about$', TemplateView.as_view(template_name="sitemap/about.html"), name="about"),
+    url(r'^shop$', TemplateView.as_view(template_name="sitemap/shop.html"), name="shop"),
+    url(r'^faq$', TemplateView.as_view(template_name="sitemap/faq.html"), name="faq"),
     #url(r'^$', mview.index, name="home"),
 ]

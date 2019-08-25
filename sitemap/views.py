@@ -10,8 +10,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
-#@login_required(login_url="")
-
+@login_required(login_url="auth/login")
+def index(request):
+    return HttpResponse("HOMEPAGE AUTHENTICATED")
 
 class HomeView(TemplateView):
 

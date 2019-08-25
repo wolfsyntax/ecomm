@@ -1,0 +1,22 @@
+{%  extends "base.html" %}
+{% block title %}
+    FAQ | Tatak Pinoy
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Log-in</h1>
+            <p class="text-center">Please, use the following form to log-in:</p>
+
+            <form action="" method="post">
+
+                {% csrf_token %}
+                <div class="form-row my-2">
+                    <div class="col">
+                        <input type="text" name="username" class="form-control zround" placeholder="Email/Phone" required="" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
