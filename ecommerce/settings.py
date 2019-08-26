@@ -152,9 +152,10 @@ DEFAULT_FROM_EMAIL = "Admin <{}>".format(EMAIL_HOST_USER)
 SECURE_BROWSER_XSS_FILTER = True
 
 #Login URL Configuration
-LOGIN_URL = ""
+LOGIN_URL = "auth/login"
 LOGIN_REDIRECT_URL = ""
 LOGOUT_REDIRECT_URL = ""
+LOGOUT_REDIRECT_URL = "/"
 
 # Media Directory Configuration
 MEDIA_ROOT = ""

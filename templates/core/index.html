@@ -3,5 +3,13 @@
     E-Commerce | Your All-in-One Online Store
 {% endblock %}
 {% block content %}
-    A
+    {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}!
+    {% endif %}
+    {% now "h:i:s A" %}
+    <p>
+        <a href="{% url 'authentication:logout' %}" class="simple-link">
+            Logout
+        </a>
+    </p>
 {% endblock %}

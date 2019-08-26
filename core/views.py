@@ -14,7 +14,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class HomePageView(LoginRequiredMixin, TemplateView):
-    login_url = '/login/'
+    login_url = '/auth/login/'
     template_name = "core/index.html"
 
     def get_context_data(self, **kwargs):

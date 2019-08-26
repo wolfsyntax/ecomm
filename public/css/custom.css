@@ -8,6 +8,24 @@
   font-size: 14px !important;
 }
 
+.flat-rounded-0{
+    border-radius:0!important;
+    border: none !important;
+}
+
+.flat-rounded-0.flat-grey-dark {
+    background-color: #343a40 !important;
+}
+
+.flat-rounded-0.flat-grey-90 {
+    background-color: #e5e5e5 !important;
+    color: #000000 !important;
+}
+
+.flat-rounded-0.flat-grey-e7 {
+    background-color: #e7e7e7 !important;
+    color: #000000 !important;
+}
 .custom-zround {
   border-radius: 25px !important;
   font-size: 12px !important;

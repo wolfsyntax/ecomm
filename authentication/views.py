@@ -7,17 +7,22 @@ from django.views.generic import TemplateView, CreateView, UpdateView, DeleteVie
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import logout, authenticate, login
 
-#from django.views import View
+from django.views import View
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.debug import sensitive_post_parameters
 
+from django.contrib.auth.models import User
+#from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from authentication.forms import UserRegistrationForm
+
+
 class LoginView(TemplateView):
 
     template_name = ""
-    success_url = "auth/join" # None
+    #success_url = "auth/join/" # None
     redirect_authenticated_user = True
     redirect_field_name = 'next'
 
@@ -64,32 +69,32 @@ class LoginView(TemplateView):
 #        context = {}
 #        return context
 
-class SignupView(CreateView):
+class SignupView(View):
+    #model = User
+    fields = [
+        'first_name', 'last_name', 'username', 'email', 'password',
+    ]
 
     template_name = "authentication/register.html"
+    form_class = UserRegistrationForm
+    success_url = "auth/login"
 
     def get(self, request, *args, **kwargs):
-        context = {
 
-        }
+        form = self.form_class()
 
-        return render(request, "authentication/register.html", context)
+        return render(request, self.template_name, {"form": form})
 
     def post(self, request, *args, **kwargs):
-        """
-        Handle POST requests: instantiate a form instance with the passed
-        POST variables and then check if it's valid.
-        """
-        print("\n\n\nUsername: {}\n\n\n".format(request.POST["username"]))
-        #return HttpResponse("SIGNUP ATTEMPT")
-        form = self.get_form()
+
+        form = self.form_class(request.POST)
+
         if form.is_valid():
 
+            form.save()
 
-            return self.form_valid(form)
-        else:
-            return self.form_invalid(form)
-
+            return HttpResponseRedirect('/auth/login/?next=/')
+        return render(request, self.template_name, {"form": form})
 
 class LogoutView(RedirectView):
 

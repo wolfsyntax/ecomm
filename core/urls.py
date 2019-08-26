@@ -22,7 +22,7 @@ from django.views.generic import TemplateView
 from core.views import HomePageView
 
 urlpatterns = [
-#    url(r'^$', HomePageView.as_view(), name="home"),
-    url(r'^dashboard$', TemplateView.as_view(template_name="core/index.html"), name="home"),
+    url(r'^dashboard$', HomePageView.as_view(), name="home"),
+#    url(r'^dashboard$', TemplateView.as_view(template_name="core/index.html"), name="home"),
     #url(r'^$', mview.index, name="home"),
 ]

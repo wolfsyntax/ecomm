@@ -1,22 +1,115 @@
 {%  extends "base.html" %}
 {% block title %}
-    FAQ | Tatak Pinoy
+    Register | Tatak Pinoy
 {% endblock %}
 {% block content %}
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">Log-in</h1>
-            <p class="text-center">Please, use the following form to log-in:</p>
+    <div class="row mt-5 py-5">
+
+        <div class="col-12 col-md-4 offset-md-4 mt-0 mt-md-5">
+            <h1 class="text-center">Sign Up</h1>
+            <p class="text-center">Please, sign up using the following form:</p>
 
             <form action="" method="post">
 
                 {% csrf_token %}
+
                 <div class="form-row my-2">
                     <div class="col">
-                        <input type="text" name="username" class="form-control zround" placeholder="Email/Phone" required="" value="">
+                        <input type="text" name="first_name" class="form-control zround" placeholder="First name" required="" value="{% if form.first_name.value %}{{form.first_name.value}}{% endif %}">
+                        {% if form.first_name.errors %}
+                        <small>
+                            {% for error in form.first_name.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
+                    </div>
+
+                    <div class="col">
+                        <input type="text" name="last_name" class="form-control zround" placeholder="Last name" required="" value="{% if form.last_name.value %}{{form.last_name.value}}{% endif %}">
+                        {% if form.last_name.errors %}
+                        <small>
+                            {% for error in form.last_name.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
                     </div>
                 </div>
+
+                <div class="form-row my-2">
+                    <div class="col">
+                        <input type="text" name="username" class="form-control zround" placeholder="Username" required="" value="{% if form.username.value %}{{form.username.value}}{% endif %}">
+                        {% if form.username.errors %}
+                        <small>
+                            {% for error in form.username.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="form-row my-2">
+                    <div class="col">
+                        <input type="email" name="email" class="form-control zround" placeholder="Email" required="" value="{% if form.email.value %}{{form.email.value}}{% endif %}">
+                        {% if form.email.errors %}
+                        <small>
+                            {% for error in form.email.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="form-row my-2">
+                    <div class="col">
+                        <input type="password" name="password" class="form-control zround" placeholder="New Password" required="" value="{% if form.password.value %}{{form.password.value}}{% endif %}">
+                        {% if form.password.errors %}
+                        <small>
+                            {% for error in form.password.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
+                    </div>
+
+                    <div class="col">
+                        <input type="password" name="conf_password" class="form-control zround" placeholder="Confirm Password" required="" value="{% if form.conf_password.value %}{{form.conf_password.value}}{% endif %}">
+                        {% if form.conf_password.errors %}
+                        <small>
+                            {% for error in form.conf_password.errors %}
+                            {{ error }}
+                            {% endfor %}
+                        </small>
+                        {% endif %}
+                    </div>
+
+                </div>
+
+                <div class="form-row px-2 ">
+                    <label class="checkbox-inline"><input type="checkbox" name="is_agree" id="is_agree" required=""> I accept the <a href="#" class="simple-link">Terms of Use</a> &amp; <a href="#" class="simple-link">Privacy Policy</a></label>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-dark btn-sm w-100 zround">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-row py-0 my-2">
+                    <p class="col text-center">Already have an account?<a href="{% url 'authentication:login' %}" class="col text-center simple-link">Login</a></p>
+                </div>
+
             </form>
         </div>
+
+    <div class="col">
+        &emsp;
+    </div>
     </div>
 {% endblock %}

@@ -17,14 +17,12 @@ Including another URLconf
 from django.urls import path
 from django.conf.urls import url
 from . import views as mview
-from authentication.views import LoginView, SignupView, LogoutView
-
+from authentication.views import SignupView, LoginView
+from django.contrib.auth.views import LogoutView, PasswordChangeView, PasswordChangeDoneView, PasswordResetView,PasswordResetDoneView, PasswordResetConfirmView,PasswordResetCompleteView
 #from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    url(r'^login/$', LoginView.as_view(), name="login"),
+    url(r'^login/$', LoginView.as_view(template_name="authentication/login.html"), name="login"),
     url(r'^join/$', SignupView.as_view(), name="signup"),
-    #url(r'^logout/$', LogoutView.as_view(template_name='authentication/login.html'), name="logout"),
     url(r'^logout/$', LogoutView.as_view(), name="logout"),
-    #url(r'^$', mview.index, name="home"),
 ]
