@@ -4,13 +4,31 @@
 {% endblock %}
 {% block content %}
     <div class="row">
-        <div class="col">
-            <h1>Home | Sitemap</h1>
-        </div>
-        <div class="col">
-            <h1>Home | Sitemap</h1>
-        </div>
+        <div class="col-12 col-md-4 offset-md-4 my-3">
+            <form action="" method=""post">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="col ">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control flat-input border-dark input-sm" name="search_location" />
+                            <div class="input-group-prepend">
+                                <button type="submit" class="btn btn-dark d-inline-block btn-group-lg border-0"><i class="fa fa-location-arrow"></i></button>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="form-row ">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col">
+            <h1>TEST</h1>
+        </div>
     </div>
 
     <div class="row">
@@ -34,7 +52,7 @@
 
                 <li class="nav-item">
                     <p class="nav-link text-dark">
-                        <i class="fa fa-lg fa-phone" ></i>&emsp;&emsp;(+633)912-628-0488
+                        <i class="fa fa-lg fa-phone" ></i>&emsp;&emsp;(+633) 912-628-0488
                     </p>
                 </li>
             </ul>
@@ -47,31 +65,31 @@
 
                     <ul class="nav flex-column px-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{% url 'sitemap:home' %}" class="nav-link">
                                 Home
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{% url 'sitemap:about' %} class="nav-link">
                                 About
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{% url 'sitemap:shop' %} class="nav-link">
                                 Shop More
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="href="{% url 'sitemap:partners' %}" class="nav-link">
                                 Partners
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{% url 'sitemap:faq' %} class="nav-link">
                                 FAQ
                             </a>
                         </li>
@@ -109,7 +127,7 @@
         <div class="col-12 col-md-4 mb-5 mb-md-0">
             <div class="row px-3 mb-5 mb-md-0">
                 <div class="col">
-                    <h1>Contact Us</h1>
+                    <h6>Contact Us</h6>
                     <form class="container-fluid mr-5 mb-3" method="post">
                         {% csrf_token %}
                         <div class="form-row my-2">

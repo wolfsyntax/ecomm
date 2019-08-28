@@ -13,6 +13,14 @@
     border: none !important;
 }
 
+.flat-input.border-dark{
+    border-color: #000000 !important;
+}
+.flat-input {
+    border-radius: 0px !important;
+    /*border: none !important;*/
+    /*width: 100% !important;*/
+}
 .flat-rounded-0.flat-grey-dark {
     background-color: #343a40 !important;
 }
@@ -21,6 +29,7 @@
     background-color: #e5e5e5 !important;
     color: #000000 !important;
 }
+
 
 .flat-rounded-0.flat-grey-e7 {
     background-color: #e7e7e7 !important;

@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^about$', TemplateView.as_view(template_name="sitemap/about.html"), name="about"),
     url(r'^shop$', TemplateView.as_view(template_name="sitemap/shop.html"), name="shop"),
     url(r'^faq$', TemplateView.as_view(template_name="sitemap/faq.html"), name="faq"),
+    url(r'^partners$', TemplateView.as_view(template_name="sitemap/partners.html"), name="partners"),
     #url(r'^$', mview.index, name="home"),
 ]

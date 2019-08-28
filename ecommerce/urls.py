@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import url
+from django.conf.urls import url, handler400, handler403, handler404, handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,3 +23,8 @@ urlpatterns = [
     url(r"^", include(("sitemap.urls", "sitemap")), name="sitemap"),
     url(r"^auth/", include(("authentication.urls", "authentication")), name="authentication"),
 ]
+
+handler400 = "errors.views.e400"    #bad request
+handler403 = "errors.views.e403"    #permission denied
+handler404 = "errors.views.e404"    #page not found
+handler500 = "errors.views.e500"    #server error
