@@ -1,10 +1,12 @@
 {%  extends "base.html" %}
+{% load static %}
 {% block title %}
     E-Commerce | Your All-in-One Online Store
 {% endblock %}
 {% block content %}
+
     <div class="row">
-        <div class="col-12 col-md-4 offset-md-4 my-3">
+        <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 my-3">
             <form action="" method=""post">
                 {% csrf_token %}
                 <div class="form-row">
@@ -19,19 +21,239 @@
 
                 </div>
                 <div class="form-row ">
-
+                    <p>
+                        <small class="form-text">
+                            Enter your location
+                        </small>
+                    </p>
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="row my-3">
-        <div class="col">
-            <h1>TEST</h1>
+    <div class="row mt-3 mb-5">
+        <div class="col-12">
+            <div class="container-fluid px-2 px-md-4">
+                <div class="row my-2 px-5">
+                    <div class="col">
+                        <h6 class="font-weight-bolder text-uppercase">Categories</h6>
+                        <!--small>Subcategories</small-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/xrp.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Groceries</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/TRX - Tron.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Pharmaceuticals</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/QTUM.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Health & Personal Care</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/0x.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Pet Care</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/ADA - Cardano.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Agricultural Products</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+					<div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/dai.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Office & School Supplies</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/ltc.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Babies & Kids</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/dash.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Toys Games & Collectibles</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+					<div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/xlm.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Men's Apparel</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/XMR - Monero.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Women's Apparel</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/rvn - ravencoin.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Sports & Travel</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/eos.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Home & Lifestyle</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/etc.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Home Appliances</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/btc-icon.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Mobiles & Accessories</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/BNB - Binance Coin.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Gaming</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/USDC - USD Coin.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Laptop & Computers</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/USDT - Tether.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Electronics</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <figure class="figure">
+                            <img src="{% static 'images/bch-icon.png' %}" class="figure-img img-fluid rounded" alt="" style="width: 64px !important;">
+                            <figcaption class="figure-caption text-center">
+                                <small>
+                                    <a href="" class="simple-link text-dark">Automotive & Motorcyles</a>
+                                </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-5 pb-4   ">
         <div class="col-12 col-md-4">
             <p class="px-2 ml-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada scelerisque nisl, ac facilisis risus sagittis quis.
@@ -60,7 +282,7 @@
 
         <div class="col-12 col-md-4">
             <div class="row py-3 py-md-1 ">
-                <div class="col px-5">
+                <div class="col text-left">
                     <h6 class="px-2">Company</h6>
 
                     <ul class="nav flex-column px-0">
@@ -71,25 +293,25 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{% url 'sitemap:about' %} class="nav-link">
+                            <a href="{% url 'sitemap:about' %}" class="nav-link">
                                 About
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{% url 'sitemap:shop' %} class="nav-link">
+                            <a href="{% url 'sitemap:shop' %}" class="nav-link">
                                 Shop More
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="href="{% url 'sitemap:partners' %}" class="nav-link">
+                            <a href="{% url 'sitemap:partners' %}" class="nav-link">
                                 Partners
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{% url 'sitemap:faq' %} class="nav-link">
+                            <a href="{% url 'sitemap:faq' %}" class="nav-link">
                                 FAQ
                             </a>
                         </li>
@@ -103,7 +325,7 @@
                     </ul>
                 </div>
 
-                <div class="col px-5">
+                <div class="col text-left">
                     <h6 class="px-2">Services</h6>
 
                     <ul class="nav flex-column px-0">

@@ -43,6 +43,33 @@
 .btn.zround{
     line-height: 1pt !important;
 }
-*{
-    font-size:12pt !important;
+p, a {
+    font-size: 11pt !important;
+}
+
+input, textarea, button {
+    font-size: 12pt !important;
+}
+.text-facebook {
+ color: #3b5998 !important;
+}
+
+.text-twitter {
+ color: #0084b4 !important;
+}
+
+.text-youtube {
+ color: #c3352e !important;
+}
+
+.text-instagram {
+ color: #ffffff !important;
+}
+
+.text-google {
+    color: #4285f4 !important;
+}
+
+.text-rss {
+    color: #ee802f !important;
 }

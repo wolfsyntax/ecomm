@@ -23,11 +23,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$(pej&e-2coj&lujq-vi9g21p3ego*)lcyw0te2j5@2m@4*6mq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+#==== PRODUCTION MODE =====
+#DEBUG = False
+#ALLOWED_HOSTS = ["*"]
+
+#==== DEVELOPMENT MODE =====
+DEBUG = True
+
+#if DEBUG is False:
+#    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+#else:
+#    ALLOWED_HOSTS = []
 
 
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"] if DEBUG is False else []
 # Application definition
 
 INSTALLED_APPS = [
