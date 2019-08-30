@@ -1,0 +1,59 @@
+<nav class="navbar">
+<ul class="nav  justify-content-start">
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'sitemap:home' %}">Home</a>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+
+        <div class="dropdown-menu dropdown-menu-left">
+            <a class="dropdown-item" href="{% url 'sitemap:shop' %}">About Us</a>
+            <a class="dropdown-item" href="#">Partners</a>
+            <!--a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a-->
+
+        </div>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">FAQ</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">Support</a>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+
+        <div class="dropdown-menu dropdown-menu-left">
+            <a class="dropdown-item" href="{% url 'sitemap:shop' %}">Online-Store</a>
+            <a class="dropdown-item" href="#">Bills Payment</a>
+            <!--a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a-->
+
+        </div>
+    </li>
+
+    <!--li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li-->
+</ul>
+
+<ul class="nav mx-auto mx-md-0 justify-content-md-end">
+    <li class="nav-item">
+        <a href="{% url 'authentication:login' %}" class="nav-link">Login</a>
+    </li>
+
+    <li class="nav-item">
+        <a href="{% url 'authentication:signup' %}" class="nav-link">Signup</a>
+    </li>
+
+</ul>
+</nav>

@@ -37,7 +37,7 @@ DEBUG = True
 #    ALLOWED_HOSTS = []
 
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"] if DEBUG is False else []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"] if DEBUG is False else ["0.0.0.0", "192.168.1.4", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
