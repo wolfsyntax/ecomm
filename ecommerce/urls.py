@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url, handler400, handler403, handler404, handler500
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r"^", include(("core.urls", "core")), name="core"),
     url(r"^", include(("sitemap.urls", "sitemap")), name="sitemap"),
     url(r"^auth/", include(("authentication.urls", "authentication")), name="authentication"),
+    url(r'^test/$', TemplateView.as_view(template_name="errors/e404.html"), name="test-unit"),
 ]
 
 handler400 = "errors.views.e400"    #bad request

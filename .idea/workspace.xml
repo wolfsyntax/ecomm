@@ -5,8 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/addons/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addons/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/addons/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addons/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/authentication/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authentication/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/authentication/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/authentication/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/errors/e404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/errors/e404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sitemap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sitemap/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,48 +34,54 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.41" value="3" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.45" value="3" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.94" value="1" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
-          <entry key="html" value="38" />
-          <entry key="js" value="2" />
-          <entry key="py" value="48" />
+          <entry key="css" value="9" />
+          <entry key="html" value="49" />
+          <entry key="js" value="4" />
+          <entry key="py" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
-          <entry key="HTML" value="38" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Python" value="48" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="49" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="562" />
-          <entry key="html" value="8517" />
-          <entry key="js" value="81" />
-          <entry key="py" value="6285" />
+          <entry key="css" value="1497" />
+          <entry key="html" value="10262" />
+          <entry key="js" value="471" />
+          <entry key="py" value="7017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="562" />
-          <entry key="HTML" value="8517" />
-          <entry key="JavaScript" value="81" />
-          <entry key="Python" value="6285" />
+          <entry key="CSS" value="1497" />
+          <entry key="HTML" value="10262" />
+          <entry key="JavaScript" value="471" />
+          <entry key="Python" value="7017" />
         </counts>
       </usages-collector>
     </session>
@@ -75,28 +92,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sitemap/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/authentication/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1213">
-              <caret line="326" column="57" selection-start-line="326" selection-start-column="57" selection-end-line="326" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/templates/addons/sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sitemap/partners.html">
+        <entry file="file://$PROJECT_DIR$/public/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="512">
+              <caret line="176" column="28" selection-start-line="176" selection-start-column="28" selection-end-line="176" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/errors/e404.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/authentication/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -104,17 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecommerce/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="134" column="13" lean-forward="true" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/addons/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="39">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -122,51 +148,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="170">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sitemap/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/errors/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <marker date="1566960709352" expanded="true" signature="170:175" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/authentication/register.html">
+        <entry file="file://$PROJECT_DIR$/merchants/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="42" />
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authentication/forms.py">
+        <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="342">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1566834387946" expanded="true" signature="349:354" ph="..." />
+                <element signature="e#633#665#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sitemap/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -216,35 +232,37 @@
         <option value="$PROJECT_DIR$/templates/sitemap/contact.html" />
         <option value="$PROJECT_DIR$/templates/sitemap/shop.html" />
         <option value="$PROJECT_DIR$/templates/sitemap/about.html" />
-        <option value="$PROJECT_DIR$/templates/addons/sidebar.html" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
         <option value="$PROJECT_DIR$/public/css/app.css.html" />
         <option value="$PROJECT_DIR$/authentication/models.py" />
         <option value="$PROJECT_DIR$/sitemap/views.py" />
         <option value="$PROJECT_DIR$/authentication/forms.py" />
-        <option value="$PROJECT_DIR$/templates/authentication/register.html" />
         <option value="$PROJECT_DIR$/authentication/views.py" />
-        <option value="$PROJECT_DIR$/templates/authentication/login.html" />
         <option value="$PROJECT_DIR$/authentication/urls.py" />
-        <option value="$PROJECT_DIR$/templates/core/index.html" />
         <option value="$PROJECT_DIR$/core/urls.py" />
         <option value="$PROJECT_DIR$/core/views.py" />
         <option value="$PROJECT_DIR$/templates/sitemap/faq.html" />
         <option value="$PROJECT_DIR$/templates/errors/e500.html" />
         <option value="$PROJECT_DIR$/templates/errors/e403.html" />
         <option value="$PROJECT_DIR$/errors/views.py" />
-        <option value="$PROJECT_DIR$/templates/errors/e404.html" />
-        <option value="$PROJECT_DIR$/ecommerce/urls.py" />
         <option value="$PROJECT_DIR$/sitemap/urls.py" />
         <option value="$PROJECT_DIR$/templates/sitemap/partners.html" />
         <option value="$PROJECT_DIR$/templates/addons/footer.html" />
-        <option value="$PROJECT_DIR$/public/css/custom.css" />
-        <option value="$PROJECT_DIR$/ecommerce/settings.py" />
         <option value="$PROJECT_DIR$/templates/addons/heade.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/sitemap/index.html" />
+        <option value="$PROJECT_DIR$/templates/products/index.html" />
+        <option value="$PROJECT_DIR$/merchants/models.py" />
+        <option value="$PROJECT_DIR$/templates/addons/sidebar.html" />
+        <option value="$PROJECT_DIR$/templates/core/index.html" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
         <option value="$PROJECT_DIR$/templates/addons/header.html" />
+        <option value="$PROJECT_DIR$/templates/sitemap/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/authentication/register.html" />
+        <option value="$PROJECT_DIR$/ecommerce/urls.py" />
+        <option value="$PROJECT_DIR$/ecommerce/settings.py" />
+        <option value="$PROJECT_DIR$/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/templates/errors/e404.html" />
+        <option value="$PROJECT_DIR$/templates/authentication/login.html" />
       </list>
     </option>
   </component>
@@ -254,11 +272,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
-    <option name="height" value="498" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
+    <option name="y" value="5" />
+    <option name="width" value="1276" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -266,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,6 +301,11 @@
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
               <item name="errors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="merchants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -314,13 +338,18 @@
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="errors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +390,7 @@
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
-      <option name="additionalOptions" value="--insecure" />
+      <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
@@ -393,16 +422,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="58" y="5" width="1276" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.18683812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.23684211" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.504" side_tool="true" weight="0.18154311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22419354" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22749591" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
@@ -410,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19354838" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19148937" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -419,13 +448,13 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.18683812" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.23684211" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.504" side_tool="true" weight="0.18154311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22419354" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22749591" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
@@ -433,7 +462,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19354838" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19148937" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -466,13 +495,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/app.css.html" />
-    <entry file="file://$PROJECT_DIR$/templates/addons/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ecommerce/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -543,22 +565,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/core/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/models.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/authentication/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/errors/e500.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -575,29 +583,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errors/urls.py" />
-    <entry file="file://$PROJECT_DIR$/templates/errors/e404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/addons/footer.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,16 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sitemap/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="101" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="101" />
-          <folding>
-            <element signature="e#634#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addons/heade.html" />
     <entry file="file://$PROJECT_DIR$/templates/sitemap/partners.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -630,6 +608,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/products/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/errors/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -640,63 +632,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/authentication/register.html">
+    <entry file="file://$PROJECT_DIR$/templates/addons/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1566834387946" expanded="true" signature="349:354" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addons/heade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="134" column="13" lean-forward="true" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="87">
+          <caret line="108" column="116" selection-start-line="108" selection-start-column="116" selection-end-line="108" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sitemap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1213">
-          <caret line="326" column="57" selection-start-line="326" selection-start-column="57" selection-end-line="326" selection-end-column="57" />
+        <state relative-caret-position="560">
+          <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addons/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addons/header.html">
+    <entry file="file://$PROJECT_DIR$/merchants/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="187">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/authentication/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="176" column="28" selection-start-line="176" selection-start-column="28" selection-end-line="176" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/errors/e404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/authentication/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
         </state>
       </provider>
     </entry>

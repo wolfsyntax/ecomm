@@ -1,59 +1,122 @@
 <nav class="navbar">
-<ul class="nav  justify-content-start">
-    <li class="nav-item">
-        <a class="nav-link active" href="{% url 'sitemap:home' %}">Home</a>
-    </li>
+    {% if not user.is_authenticated %}
+        <ul class="nav  justify-content-start">
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'sitemap:home' %}">Home</a>
+            </li>
 
-    <li class="nav-item dropdown">
-        <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">About</a>
 
-        <div class="dropdown-menu dropdown-menu-left">
-            <a class="dropdown-item" href="{% url 'sitemap:shop' %}">About Us</a>
-            <a class="dropdown-item" href="#">Partners</a>
-            <!--a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu dropdown-menu-left">
+                    <a class="dropdown-item" href="{% url 'sitemap:shop' %}">About Us</a>
+                    <a class="dropdown-item" href="#">Partners</a>
+                    <!--a class="dropdown-item" href="#">Something else here</a>
 
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a-->
 
-        </div>
-    </li>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">Services</a>
+
+                <div class="dropdown-menu dropdown-menu-left">
+                    <a class="dropdown-item" href="{% url 'sitemap:shop' %}">Online-Store</a>
+                    <a class="dropdown-item" href="#">Bills Payment</a>
+                    <!--a class="dropdown-item" href="#">Something else here</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a-->
+
+                </div>
+            </li>
+
+            <!--li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li-->
+        </ul>
+
+        <ul class="nav mx-auto mx-md-0 justify-content-md-end">
+            <li class="nav-item">
+                <a href="{% url 'authentication:login' %}" class="nav-link">Login</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'authentication:signup' %}" class="nav-link">Signup</a>
+            </li>
+
+        </ul>
+
+    {% else %}
+
+        <!--div class="container-fluid">
+
+            <button id="sidebarCollapse" class="btn btn-transparent" aria-hidden="true">
+                <i class="fa fa-arrow-right fa-lg" id="toggler-icon"></i>
+            </button>
+
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Page</a>
+                    </li>
+                </ul>
+            </div>
 
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
-    </li>
+        </div-->
+        <ul class="nav  justify-content-start">
+            <li class="nav-item">
+                <a id="sidebarCollapse" class="btn btn-transparent" aria-hidden="true">
+                    <i class="fa fa-arrow-left" id="toggler-icon"></i>
+                </a>
+            </li>
+        </ul>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">Support</a>
-    </li>
+        <ul class="nav mx-auto mx-md-0 justify-content-md-end">
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <i class="fa fa-cog"></i>
+                </a>
 
-    <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="{% url 'authentication:logout' %}"><i class="fa fa-sign-out"></i> Logout</a>
+                    <a class="dropdown-item" href="#">Bills Payment</a>
+                    <!--a class="dropdown-item" href="#">Something else here</a>
 
-        <div class="dropdown-menu dropdown-menu-left">
-            <a class="dropdown-item" href="{% url 'sitemap:shop' %}">Online-Store</a>
-            <a class="dropdown-item" href="#">Bills Payment</a>
-            <!--a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a-->
 
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a-->
+                </div>
+            </li>
 
-        </div>
-    </li>
+        </ul>
 
-    <!--li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li-->
-</ul>
-
-<ul class="nav mx-auto mx-md-0 justify-content-md-end">
-    <li class="nav-item">
-        <a href="{% url 'authentication:login' %}" class="nav-link">Login</a>
-    </li>
-
-    <li class="nav-item">
-        <a href="{% url 'authentication:signup' %}" class="nav-link">Signup</a>
-    </li>
-
-</ul>
+    {% endif %}
 </nav>

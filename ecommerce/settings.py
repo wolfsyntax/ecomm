@@ -51,6 +51,12 @@ INSTALLED_APPS = [
     "sitemap",
     "authentication",
     "errors",
+    # Modules
+    "logistics",
+    "merchants",
+    "orders",
+    "products",
+
 ]
 
 MIDDLEWARE = [

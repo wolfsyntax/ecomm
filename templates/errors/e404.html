@@ -3,5 +3,17 @@
     Title 404
 {% endblock %}
 {% block content %}
-    CONTENT HERE
+    <div class="row bg-dark h-100">
+        <div class="col my-auto text-white">
+            <h1 class="error-header font-weight-bolder">404</h1>
+            <h6 class="text-center">The page you are looking for might have been removed had its name changed or is temporarily unavailable.</h6>
+            <p class="text-center py-2">
+                <a href="{% url 'sitemap:home' %}" class="text-center text-uppercase btn btn-outline-light">
+                    Homepage
+                </a>
+            </p>
+        </div>
+    </div>
+
+    {% include 'addons/footer.html' %}
 {% endblock %}

@@ -3,13 +3,29 @@
     E-Commerce | Your All-in-One Online Store
 {% endblock %}
 {% block content %}
-    {% if user.is_authenticated %}
-        <p>Hi {{ user.username }}!
-    {% endif %}
-    {% now "h:i:s A" %}
-    <p>
-        <a href="{% url 'authentication:logout' %}" class="simple-link">
-            Logout
-        </a>
-    </p>
+
+    {% include "addons/sidebar.html" %}
+
+    <div id="content">
+    {% include 'addons/header.html' %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+            {% if user.is_authenticated %}
+                <p>Hi {{ user.username }}!</p>
+            {% endif %}
+            <p>Time is {% now "h:i:s A" %}</p>
+            <p>
+                <a href="{% url 'authentication:logout' %}" class="simple-link">
+                    Logout
+                </a>
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
 {% endblock %}
