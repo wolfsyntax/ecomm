@@ -23,7 +23,7 @@
                 <div class="form-row ">
                     <p>
                         <small class="form-text">
-                            Enter your location
+                            Enter your location{{ data }}
                         </small>
                     </p>
                 </div>
@@ -255,8 +255,12 @@
 
     <div class="row mb-5 pb-4   ">
         <div class="col-12 col-md-6 col-xl-4">
-            <p class="px-2 ml-3">
+            <!--p class="px-2 ml-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada scelerisque nisl, ac facilisis risus sagittis quis.
+            </p-->
+
+            <p class="px-2 ml-3" style="text-justify: distribute">
+                {% lorem %}
             </p>
 
             <ul class="nav flex-column px-2">

@@ -9,6 +9,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 #from django.views import View
 
 # Create your views here.
+from django.contrib.auth.models import User
 
 @login_required(login_url="auth/login")
 def index(request):
@@ -19,7 +20,7 @@ class HomeView(TemplateView):
     template_name = "sitemap/index.html"
 
     def get_context_data(self, **kwargs):
-        context = {}
+        context = {"data": User.objects.make_random_password(8,"abcdefghjklmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789!@#$%^&*()_-+[]:;\/<>?.,")}
         return context
 
 class AboutView(TemplateView):

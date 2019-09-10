@@ -1,4 +1,27 @@
 
+function togglePass() {
+    //alert("Just testing");
+    var x = document.getElementById("init_pass");
+    var y = document.getElementById("conf_pass");
+
+    if (x.type === "password") {
+
+        x.type = "text";
+        y.type = "text";
+
+    } else {
+
+        x.type = "password";
+        y.type = "password";
+
+    }
+
+   // alert("Just trying");
+}
+
+
+
+
 $(document).ready(function(){
     $('.collapse').collapse();
     $('.dropdown-toggle').dropdown('toggle');
@@ -19,5 +42,3 @@ $(document).ready(function(){
 //    $('.dropdownx').dropdown();
 //    alert("Document ready");
 });
-
-

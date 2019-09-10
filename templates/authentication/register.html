@@ -3,7 +3,7 @@
     Register | Tatak Pinoy
 {% endblock %}
 {% block content %}
-    <div class="row mt-5 py-5">
+    <div class="row mt-5 py-5 px-1 px-lg-3 px-xl-5">
 
         <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 mt-0 mt-md-5">
             <h1 class="text-center">Sign Up</h1>
@@ -65,7 +65,17 @@
 
                 <div class="form-row my-2">
                     <div class="col">
-                        <input type="password" name="password" class="form-control zround" placeholder="New Password" required="" value="{% if form.password.value %}{{form.password.value}}{% endif %}">
+
+                        <input type="password" id="init_pass" name="password" class="form-control zround" placeholder="New Password" required="" value="{% if form.password.value %}{{form.password.value}}{% else %}{{ strong_pass }}{% endif %}" title="You can used the generated to secure your account">
+
+                    </div>
+
+                    <div class="col">
+                        <input type="password" id="conf_pass" name="conf_password" class="form-control zround" placeholder="Confirm Password" required="" value="{% if form.conf_password.value %}{{form.conf_password.value}}{% endif %}">
+
+                    </div>
+                    <div class="col-12">
+
                         {% if form.password.errors %}
                         <small>
                             {% for error in form.password.errors %}
@@ -73,10 +83,7 @@
                             {% endfor %}
                         </small>
                         {% endif %}
-                    </div>
 
-                    <div class="col">
-                        <input type="password" name="conf_password" class="form-control zround" placeholder="Confirm Password" required="" value="{% if form.conf_password.value %}{{form.conf_password.value}}{% endif %}">
                         {% if form.conf_password.errors %}
                         <small>
                             {% for error in form.conf_password.errors %}
@@ -84,13 +91,27 @@
                             {% endfor %}
                         </small>
                         {% endif %}
-                    </div>
 
+                    </div>
                 </div>
 
-                <div class="form-row px-2 ">
-                    <label class="checkbox-inline"><input type="checkbox" name="is_agree" id="is_agree" required=""> I accept the <a href="#" class="simple-link">Terms of Use</a> &amp; <a href="#" class="simple-link">Privacy Policy</a></label>
+                <div class="form-row my-2">
+                    <div class="col text-right">
 
+                        <span>Show Password</span>
+
+                        <label class="switch">
+                            <input type="checkbox" onclick="togglePass();">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="form-row px-2 my-0 py-0">
+                    <div class="col">
+                        <label class="checkbox-inline"><input type="checkbox" name="is_agree" id="is_agree" required=""> I accept the <a href="#" class="simple-link">Terms of Use</a> &amp; <a href="#" class="simple-link">Privacy Policy</a></label>
+                    </div>
                 </div>
 
                 <div class="form-row">
@@ -102,7 +123,11 @@
                 </div>
 
                 <div class="form-row py-0 my-2">
-                    <p class="col text-center">Already have an account?<a href="{% url 'authentication:login' %}" class="col text-center simple-link">Login</a></p>
+                    <p class="col text-center">Already have an account?<a href="{% url 'authentication:login' %}" class="col text-center font-weight-bolder simple-link">Login</a></p>
+                </div>
+
+                <div class="form-row py-0">
+                    <p class="col text-center py-0"><a title="Homepage" href="{% url 'sitemap:home' %}" class="col font-weight-bolder text-center simple-link"><i class="fa fa-angle-left"></i> Back</a></p>
                 </div>
 
             </form>

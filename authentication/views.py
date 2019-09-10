@@ -17,8 +17,9 @@ from django.views.decorators.debug import sensitive_post_parameters
 from django.contrib.auth.models import User
 #from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from authentication.forms import UserRegistrationForm
+import re, string
 
-
+string.punctuation
 class LoginView(TemplateView):
 
     template_name = ""
@@ -82,8 +83,14 @@ class SignupView(View):
     def get(self, request, *args, **kwargs):
 
         form = self.form_class()
+        sec_pass = string.ascii_letters + string.digits + string.punctuation
 
-        return render(request, self.template_name, {"form": form})
+        generated_pass = User.objects.make_random_password(15, sec_pass)
+
+        while not re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$', generated_pass):
+            generated_pass = User.objects.make_random_password(15, "abcdefghjklmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789!@#$%^&*()_-+[]:;\/<>?.,")
+
+        return render(request, self.template_name, {"form": form, "strong_pass": generated_pass})
 
     def post(self, request, *args, **kwargs):
 

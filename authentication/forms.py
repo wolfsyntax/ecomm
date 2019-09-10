@@ -28,6 +28,9 @@ class UserRegistrationForm(forms.Form):
         if not re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$', password):
             self.add_error('password', 'Password must contains alpha-numeric and special characters.')
 
+        if len(password):
+            self.add_error('password', 'Password must contains at least eight (8) alpha-numeric and special characters.')
+
         if password != conf_password:
             self.add_error('conf_password', 'Confirm Password not match.')
 

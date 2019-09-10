@@ -29,17 +29,6 @@ SECRET_KEY = '$(pej&e-2coj&lujq-vi9g21p3ego*)lcyw0te2j5@2m@4*6mq'
 #DEBUG = False
 #ALLOWED_HOSTS = ["*"]
 
-#==== DEVELOPMENT MODE =====
-DEBUG = True
-
-#if DEBUG is False:
-#    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
-#else:
-#    ALLOWED_HOSTS = []
-
-
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"] if DEBUG is False else ["0.0.0.0", "192.168.1.4", "127.0.0.1"]
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,7 +46,6 @@ INSTALLED_APPS = [
     "merchants",
     "orders",
     "products",
-    "clients",
 
 ]
 
@@ -79,7 +67,7 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
-            
+
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -95,20 +83,6 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        #'ENGINE' : "django.db.backends.mysql",
-        #"NAME" : "",
-        #"USER": "",
-        #"PASSWORD": "",
-        #"HOST": "",
-        #"PORT": "",
-    }
-
-}
 
 
 # Password validation
@@ -135,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Manila'
+
 
 USE_I18N = True
 
@@ -158,14 +132,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-#Email Configuration
-EMAIL_HOST = ''
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "someone@example.com" # Sender Email
-EMAIL_HOST_PASSWORD = ""
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = "django.core.backends.smtp.EmailBackend"
-DEFAULT_FROM_EMAIL = "Admin <{}>".format(EMAIL_HOST_USER)
 
 
 #Security Configuration
