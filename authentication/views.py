@@ -87,8 +87,8 @@ class SignupView(View):
 
         generated_pass = User.objects.make_random_password(15, sec_pass)
 
-        while not re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$', generated_pass):
-            generated_pass = User.objects.make_random_password(15, "abcdefghjklmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789!@#$%^&*()_-+[]:;\/<>?.,")
+        while not (re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).{8,}$', generated_pass) and re.match("^[01IiOoLl]$", generated_pass)):
+            generated_pass = User.objects.make_random_password(8, "abcdefghjklmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789!@#$%^&*()_-+[]:;\/<>?.,")
 
         return render(request, self.template_name, {"form": form, "strong_pass": generated_pass})
 
@@ -114,3 +114,5 @@ class LogoutView(RedirectView):
             return HttpResponseRedirect(next_page)
 
         return super().dispatch(request, *args, **kwargs)
+
+    #c08380c85981

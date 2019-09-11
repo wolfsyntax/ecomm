@@ -25,10 +25,12 @@ class UserRegistrationForm(forms.Form):
         password = self.cleaned_data['password']
         conf_password = self.cleaned_data['conf_password']
 
-        if not re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$', password):
+        # (?=.*[a-hj-np-z])(?=.*[A-HJ-NP-Z])(?=.*(\d|!0)).{8,}
+
+        if not re.match('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).{8,}$', password):
             self.add_error('password', 'Password must contains alpha-numeric and special characters.')
 
-        if len(password):
+        if len(password) < 8:
             self.add_error('password', 'Password must contains at least eight (8) alpha-numeric and special characters.')
 
         if password != conf_password:
